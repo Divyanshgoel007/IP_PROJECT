@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="supported-color-schemes" content="light">
+  <title>Welcome to FreshThreads!</title>
+  <style type="text/css">
+    @media screen and (max-width: 600px) {
+      .container {
+        width: 100% !important;
+        padding: 10px !important;
+      }
+      .card {
+        padding: 20px !important;
+      }
+      .button {
+        width: 100% !important;
+        text-align: center !important;
+      }
+      .services {
+        flex-direction: column !important;
+      }
+      .service {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+      }
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333333;
+      background-color: #f4f4f4;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #9333ea;
+      margin-bottom: 10px;
+    }
+    .card {
+      background: linear-gradient(to bottom, #f3f0ff, #fff0f9, #fff5eb);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #9333ea;
+      text-align: center;
+    }
+    .button {
+      display: inline-block;
+      background: linear-gradient(to right, #9333ea, #db2777);
+      color: white !important;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-weight: bold;
+      margin: 15px 0;
+      text-align: center;
+    }
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+    }
+    .services {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    .service {
+      width: 30%;
+      text-align: center;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 8px;
+    }
+    .service-icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .coupon {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 2px dashed #9333ea;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      margin: 30px 0;
+    }
+    .coupon-code {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #9333ea;
+      margin: 10px 0;
+    }
+    .socials {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social-link {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 18px;
+      color: #9333ea;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">FreshThreads</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">Welcome to FreshThreads!</div>
+      
+      <p>Hello {{ name }},</p>
+      
+      <p>Thank you for verifying your email address and joining the FreshThreads family! We're excited to have you on board.</p>
+      
+      <p>At FreshThreads, we believe that clean clothes make a happy life, and we're committed to providing you with the highest quality laundry services.</p>
+      
+      <div class="services">
+        <div class="service">
+          <div class="service-icon">🧺</div>
+          <h3>Wash & Fold</h3>
+          <p>Professional handling of your everyday clothes</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">👔</div>
+          <h3>Dry Cleaning</h3>
+          <p>Special care for delicate fabrics</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">🚚</div>
+          <h3>Pickup & Delivery</h3>
+          <p>Free service at your convenience</p>
+        </div>
+      </div>
+      
+      <div class="coupon">
+        <p><strong>Special Welcome Gift</strong></p>
+        <p>Enjoy 20% off your first order with coupon code:</p>
+        <div class="coupon-code">WELCOME20</div>
+        <p>Valid for 30 days</p>
+      </div>
+      
+      <div style="text-align: center;">
+        <a href="https://freshthreads.com/book" class="button">Book Your First Pickup</a>
+      </div>
+      
+      <p>If you have any questions or need assistance, feel free to contact our support team at support@freshthreads.com or call us at +123-456-7890.</p>
+      
+      <div class="socials">
+        <p>Follow us for tips and special offers:</p>
+        <a href="https://facebook.com/freshthreads" class="social-link">Facebook</a>
+        <a href="https://instagram.com/freshthreads" class="social-link">Instagram</a>
+        <a href="https://twitter.com/freshthreads" class="social-link">Twitter</a>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>&copy; {{ year }} FreshThreads. All rights reserved.</p>
+      <p>123 Laundry Lane, Clean City, CC 12345</p>
+      <p><small>You're receiving this email because you signed up for FreshThreads. If you prefer not to receive emails, you can <a href="https://freshthreads.com/unsubscribe">unsubscribe</a>.</small></p>
+    </div>
+  </div>
+</body>
+</html> 

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="supported-color-schemes" content="light">
+  <title>Verify Your Email - FreshThreads</title>
+  <style type="text/css">
+    @media screen and (max-width: 600px) {
+      .container {
+        width: 100% !important;
+        padding: 10px !important;
+      }
+      .card {
+        padding: 20px !important;
+      }
+      .button {
+        width: 100% !important;
+        text-align: center !important;
+      }
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333333;
+      background-color: #f4f4f4;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #9333ea;
+      margin-bottom: 10px;
+    }
+    .card {
+      background: linear-gradient(to bottom, #f3f0ff, #fff0f9, #fff5eb);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #9333ea;
+    }
+    .button {
+      display: inline-block;
+      background: linear-gradient(to right, #9333ea, #db2777);
+      color: white !important;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-weight: bold;
+      margin: 25px 0;
+    }
+    .link {
+      word-break: break-all;
+      color: #9333ea;
+    }
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+    }
+    .features {
+      margin: 25px 0;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+    }
+    .feature {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .feature-icon {
+      margin-right: 10px;
+      color: #9333ea;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">FreshThreads</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">Verify Your Email Address</div>
+      
+      <p>Hello {{ name }},</p>
+      
+      <p>Thank you for signing up for FreshThreads! Please verify your email address by clicking the button below:</p>
+      
+      <div style="text-align: center;">
+        <a href="{{ url }}" class="button">Verify Email Address</a>
+      </div>
+      
+      <p>Or copy and paste this link in your browser:</p>
+      <p><a href="{{ url }}" class="link">{{ url }}</a></p>
+      
+      <p><strong>This link will expire in 24 hours.</strong></p>
+      
+      <div class="features">
+        <p><strong>At FreshThreads, you'll enjoy:</strong></p>
+        <div class="feature">
+          <span class="feature-icon">✓</span>
+          <span>24-hour Express Service</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">✓</span>
+          <span>Eco-friendly cleaning</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">✓</span>
+          <span>Free pickup & delivery</span>
+        </div>
+      </div>
+      
+      <p>If you did not create an account, please ignore this email.</p>
+    </div>
+    
+    <div class="footer">
+      <p>&copy; {{ year }} FreshThreads. All rights reserved.</p>
+      <p>123 Laundry Lane, Clean City, CC 12345</p>
+    </div>
+  </div>
+</body>
+</html> 
